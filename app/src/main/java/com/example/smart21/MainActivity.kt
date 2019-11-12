@@ -21,7 +21,16 @@ class MainActivity : AppCompatActivity() {
             val massage: String = edUsermassage.text.toString()
             Toast.makeText(this,massage,Toast.LENGTH_SHORT).show()
             val intent = Intent(this,Secondactivity::class.java)
+            intent.putExtra("user_massage",massage)
             startActivity(intent)
+        }
+        share_implicit.setOnClickListener {
+            val massage: String = edUsermassage.text.toString()
+            val intent=Intent()
+            intent.action=Intent.ACTION_SEND
+            intent.putExtra(Intent.EXTRA_TEXT,massage)
+            intent.type="text/plain"
+            startActivity(Intent.createChooser(intent,"share to"))
         }
     }
 }

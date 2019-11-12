@@ -18,12 +18,12 @@
 
     <EditText
         android:id="@+id/edUsermassage"
-        android:layout_width="241dp"
-        android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        android:layout_height="55dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="94dp"
-        android:layout_marginBottom="435dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="425dp"
         android:ems="10"
         android:hint="enter any masssage"
         android:inputType="textPersonName" />
@@ -37,4 +37,14 @@
         android:layout_marginEnd="125dp"
         android:layout_marginBottom="343dp"
         android:text="send massage" />
+
+    <Button
+        android:id="@+id/share_implicit"
+        android:layout_width="361dp"
+        android:layout_height="62dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="224dp"
+        android:text="share to other app" />
 </RelativeLayout>
